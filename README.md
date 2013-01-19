@@ -1,10 +1,13 @@
 # Installation
 
-## Prerequisited
+## Required
 
-* Git 
+* Git (The bootstrap script will attempt to pull before installing)
 
+## Do it
 
-## Compiling
+From the .dotfiles directory, run
+
+**source bootstrap.sh**
 
 

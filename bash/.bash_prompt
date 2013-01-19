@@ -14,4 +14,4 @@ export PS2="\[$ORANGE\]→ \[$RESET\]"
 # ∴
 # →
 
-export PS1="\[${BOLD}${PURPLE}\]\u@\h \[$GREEN\]\w \[$CYAN\] → \[$RESET\]"
+export PS1="\[${BOLD}${PURPLE}\]\u@\h \[$GREEN\]\w \[$CYAN\]→ \[$RESET\]"

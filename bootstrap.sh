@@ -21,5 +21,6 @@ rsync -av hg/ $HOME
 # Finished
 cd $current_pwd
 exec $SHELL
+source ~/.bash_profile
 echo "Finished."
 

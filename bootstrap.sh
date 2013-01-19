@@ -18,6 +18,9 @@ rsync -av git/ $HOME
 # Hg
 rsync -av hg/ $HOME
 
+# Bin
+rsync -av bin $HOME
+
 # Finished
 cd $current_pwd
 exec $SHELL

@@ -5,3 +5,4 @@
 	email = memo.sanchez@gmail.com
 [core]
 	excludesfiles = ~/.gitignore
+	editor = "subl -w"

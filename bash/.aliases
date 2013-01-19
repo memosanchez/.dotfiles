@@ -1,5 +1,3 @@
-# Sublime Text
-alias subl="/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl"
+# Alias for Sublime Text that isn't so akward to type
 alias slime="subl"
-
 

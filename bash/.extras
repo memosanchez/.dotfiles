@@ -1,0 +1,5 @@
+# Symblink Sublime Text if we're on OSX
+if [ "$(uname -s)" == "Darwin" ]
+then
+	ln -fs "/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl" ~/bin/subl
+fi

@@ -13,7 +13,10 @@
 # Path
 ## Files in ~/.path will be added to your path
 [[ -r "$HOME/.path" ]] && source "$HOME/.path"
+## Make sure we have /usr/local/bin
 PATH="/usr/local/bin:$PATH"
+## Add user bin directory to path
+PATH="$HOME/bin:$PATH"
 
 # Extras
 ## ~/.extras can be used for machine specific things 

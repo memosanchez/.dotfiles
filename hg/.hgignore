@@ -1,0 +1,8 @@
+syntax: glob
+
+# OS Folder files
+.DS_Store
+Desktop.ini
+
+# Thumbnail cache file
+Thumbs.db

@@ -1,0 +1,10 @@
+# Installation
+
+## Prerequisited
+
+* Git 
+
+
+## Compiling
+
+

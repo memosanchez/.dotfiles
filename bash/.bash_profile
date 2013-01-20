@@ -1,27 +1,20 @@
-# Colors
-[[ -r "$HOME/.bash_colors" ]] && source "$HOME/.bash_colors"
-
-# Prompt
-[[ -r "$HOME/.bash_prompt" ]] && source "$HOME/.bash_prompt"
-
-# Exports
-[[ -r "$HOME/.exports" ]] && source "$HOME/.exports"
-
-# Aliases
-[[ -r "$HOME/.aliases" ]] && source "$HOME/.aliases"
+# Load common files
+## ~/.extras is used for machine-specific settings
+for file in ~/.{bash_colors,bash_prompt,exports,aliases,extras}; do
+  [ -r "$file" ] && source "$file"
+done
+unset file
 
 # Path
+
 ## Files in ~/.path will be added to your path
 [[ -r "$HOME/.path" ]] && source "$HOME/.path"
+
 ## Make sure we have /usr/local/bin
 PATH="/usr/local/bin:$PATH"
+
 ## Add user bin directory to path
 PATH="$HOME/bin:$PATH"
-
-# Extras
-## ~/.extras can be used for machine specific things 
-## that don't need to be commited
-[[ -r "$HOME/.extras" ]] && source "$HOME/.extras"
 
 # Check window size after each command and update if necessary
 shopt -s checkwinsize

@@ -4,6 +4,7 @@
 [core]
 	excludesfiles = ~/.gitignore
 	editor = "subl -w"
+  pager = cat
 [color]
   ui = auto
 [alias]
@@ -13,6 +14,6 @@
   co = checkout
   l = log --graph --decorate --oneline --date=relative
   la = log --graph --decorate --oneline --all
-  lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+  lg = log --graph --pretty=tformat:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
 
 

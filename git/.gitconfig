@@ -1,10 +1,18 @@
-[color]
-	ui = auto
 [user]
 	name = Guillermo A. Sanchez
 	email = memo.sanchez@gmail.com
 [core]
 	excludesfiles = ~/.gitignore
 	editor = "subl -w"
+[color]
+  ui = auto
 [alias]
-plog = log --graph --all --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(bold white)— %an%C(reset)' --abbrev-commit
+  df = diff --color --color-words --abbrev
+  st = status -s
+  c = commit
+  co = checkout
+  l = log --graph --decorate --oneline --date=relative
+  la = log --graph --decorate --oneline --all
+  lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+
+

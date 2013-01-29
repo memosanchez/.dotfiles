@@ -1,0 +1,3 @@
+[submodule "bin/rmate-bash"]
+	path = bin/rmate-bash
+	url = git://github.com/aurora/rmate.git

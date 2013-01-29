@@ -1,9 +1,9 @@
 function parse_git_dirty() {
-	[[ $(git status 2> /dev/null | tail -n1) != *"working directory clean"* ]] && echo "*"
+  [[ $(git status 2> /dev/null | tail -n1) != *"working directory clean"* ]] && echo "*"
 }
 
 function parse_git_branch() {
-	git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/\1$(parse_git_dirty)/"
+  git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/\1$(parse_git_dirty)/"
 }
 
 # The 'Extravagant Zsh Prompt' 
@@ -15,11 +15,17 @@ export PS2="\[$ORANGE\]→ \[$RESET\]"
 ## ∴
 ## →
 if [ -n "$SSH_CONNECTION" ]; then
-	HOST_COLOR=$ORANGE
+  HOST_COLOR=$CYAN
+  PATH_COLOR=$BLUE
+  CHAR_COLOR=$GREEN
+  PROMPT_CHAR="→"
 else
-	HOST_COLOR=$PURPLE
+  HOST_COLOR=$PURPLE
+  PATH_COLOR=$GREEN
+  CHAR_COLOR=$CYAN
+  PROMPT_CHAR="→"
 fi
 
-export PS1="\[${BOLD}${HOST_COLOR}\]\u@\h \[$GREEN\]\w \[$CYAN\]→ \[$RESET\]"
+export PS1="\[${BOLD}${HOST_COLOR}\]\u@\h \[$PATH_COLOR\]\w \[$CHAR_COLOR\]$PROMPT_CHAR \[$RESET\]"
 
 unset HOST_COLOR

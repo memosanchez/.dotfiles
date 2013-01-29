@@ -15,5 +15,6 @@
   l = log --graph --decorate --oneline --date=relative
   la = log --graph --decorate --oneline --all
   lg = log --graph --pretty=tformat:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
-
+[push]
+  default = simple
 

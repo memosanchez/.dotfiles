@@ -2,7 +2,7 @@
 	name = Guillermo A. Sanchez
 	email = memo.sanchez@gmail.com
 [core]
-	excludesfiles = ~/.gitignore
+	excludesfile = ~/.gitignore
 	editor = "subl -w"
   pager = cat
 [color]

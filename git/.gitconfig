@@ -10,6 +10,7 @@
 [alias]
   df = diff --color --color-words --abbrev
   st = status -s
+  b = branch
   c = commit
   co = checkout
   l = log --graph --decorate --oneline --date=relative

@@ -15,7 +15,7 @@ export PS2="\[$ORANGE\]→ \[$RESET\]"
 ## ∴
 ## →
 if [ -n "$SSH_CONNECTION" ]; then
-  HOST_COLOR=$CYAN
+  HOST_COLOR=$ORANGE
   PATH_COLOR=$BLUE
   CHAR_COLOR=$GREEN
   PROMPT_CHAR="→"
